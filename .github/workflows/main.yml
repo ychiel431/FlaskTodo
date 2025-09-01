@@ -24,7 +24,7 @@ jobs:
       - name: Create colorful Markdown log
         run: |
           mkdir -p logs
-          echo "### 🌟 Push Log 🌟" > logs/push_${{ steps.info.outputs.push_time }}.md
+          echo "### 🌟 Push Log 🌟 " > logs/push_${{ steps.info.outputs.push_time }}.md
           echo "- **Time:** ${{ steps.info.outputs.push_time }}" >> logs/push_${{ steps.info.outputs.push_time }}.md
           echo "- **Pusher:** ${{ steps.info.outputs.pusher }}" >> logs/push_${{ steps.info.outputs.push_time }}.md
           echo "![fun](https://cataas.com/cat/says/Hello)" >> logs/push_${{ steps.info.outputs.push_time }}.md
