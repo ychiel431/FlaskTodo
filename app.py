@@ -13,7 +13,7 @@ db = SQLAlchemy(app)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # Run server:
-# First method: python app.py (app.run needs to be included, like the if statement below)
+# First method: python app.py (app.run needs to be included, like the if statement below)עןא 
 # Second method: flask run (after exporting 2 env variables:
 # export FLASK_ENV=development, export FLASK_APP=app.py)
 class Todo(db.Model):
