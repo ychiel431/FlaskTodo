@@ -33,8 +33,7 @@ jobs:
       - name: Report Test Results
         if: always()
         run: |
-          TEST_STATUS=$(cat test_results.log | grep "OK")
-          if [ -n "$TEST_STATUS" ]; then
+          if cat test_results.log | grep -q "OK"; then
             echo "::notice title=Tests Passed!::✅ כל הבדיקות עברו בהצלחה! העבודה שלך מושלמת.🎉"
             exit 0
           else
